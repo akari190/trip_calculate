@@ -5,39 +5,43 @@
 
 ## 発表資料
 
-[発表資料はこちら](docs/Presentation materials_vol9.pptx)
+[発表資料はこちら](./docs/Presentation%20materials_vol9.pptx)
 
 
 ## アプリ概要
 ともたびは、旅行メンバーでグループを作成し、支払いの登録・自動精算により負担額を見える化できるWebアプリです。さらに、自分の参加している予定をカレンダーで一括管理できます。SPAでの作成にこだわり、より簡単に操作ができるようにしました。
 
 ## 使用技術
-カテゴリ技術フロントエンドReact (JavaScript)バックエンド / DBFirebase (Authentication / Firestore)UICSS / HTML
+
+| カテゴリ | 技術 |
+| --- | --- |
+| フロントエンド | React (JavaScript) |
+| バックエンド / DB | Firebase (Authentication / Firestore) |
+| UI | CSS / HTML |
 
 ## 主な機能と画面説明
 1.  ログイン・アカウント作成
 
-![Title](docs/images/login.png)
+![Title](./docs/images/login.png)
 
 メールアドレスとパスワードによるユーザー認証をFirebase Authenticationで実装しています。「アカウントを作成」リンクから新規登録も可能です。シンプルなカード型UIで、初めて使うユーザーでも迷わず操作できます。
 
 2.  プロフィール設定
 
-![Settings](docs/images/settings.png)
+![Settings](./docs/images/settings.png)
 
 設定画面では表示名とアイコン画像URLを自由に変更できます。プロフィールを更新すると、サイドバーのアイコンにもリアルタイムで反映されます。Firestoreにユーザー情報を保存することで、ログイン後も設定が維持されます。
 
 3. マイページ・フレンド管理
 
-![mypage](docs/images/mypage.png)
+![mypage](./docs/images/mypage.png)
 
 マイページでは参加中のグループの確認に加え、他のユーザーを友達として追加する機能があります。ユーザーIDをもとにFirestore上で友達関係を管理しており、「友達済み」「友達に追加」の状態がリアルタイムで切り替わります。
 
 4. グループ詳細・支払い管理
 
-![group](docs/images/group.png)
-
-![gropudetails](docs/images/groupdetails.png)
+![group](./docs/images/group.png)
+![gropudetails](./docs/images/groupdetails.png)
 グループ詳細ページでは以下の操作が可能です。
 
 - 支払いを追加する ― 品目名・金額を入力して支払いを記録。誰が支払ったかがUID付きで履歴表示されます（例：コンビニ代 - ¥500）
@@ -48,7 +52,7 @@
 
 5.  カレンダー・スケジュール管理
 
-![schedule](docs/images/schedule.png)
+![schedule](./docs/images/schedule.png)
 
 カレンダー画面では旅行の予定をグループと紐づけて登録・管理できます。
 
